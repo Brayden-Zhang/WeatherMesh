@@ -1,6 +1,7 @@
 # WeatherMesh-2: PyTorch Implementation
 
->[!NOTE] This repository contains an initial draft implementation of the WeatherMesh-2 model. Design decisions were based on the technical blog from WindBorne Systems ([link](https://windbornesystems.com/blog/weathermesh-2-technical-blog)).
+> [!NOTE] 
+> This repository contains an initial draft implementation of the WeatherMesh-2 model. Design decisions were based on the ([technical blog from WindBorne Systems](https://windbornesystems.com/blog/weathermesh-2-technical-blog)).
 
 
 ## Repository Structure
