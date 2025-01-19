@@ -3,7 +3,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 from einops import rearrange
 
+# TODO: use the NATTEN implementation instead of the below
+
 class NeighborhoodAttention(nn.Module):
+    """
+    
+    
+    """
+
     def __init__(
         self,
         dim,
@@ -26,6 +33,7 @@ class NeighborhoodAttention(nn.Module):
         self.proj = nn.Linear(dim, dim)
         self.dropout = nn.Dropout(dropout)
         
+        # TODO: fix and understand this
         # Rotary position embedding
         self.register_buffer(
             "rel_pos_h",
@@ -98,7 +106,6 @@ class NeighborhoodAttention(nn.Module):
         x = rearrange(x, 'b heads p n d -> b p n (heads d)')
         x = self.proj(x)
         
-        # Reshape back to original format
         x = x.view(B, D, H, W, C)
         
         return x
