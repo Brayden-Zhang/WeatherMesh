@@ -1,5 +1,8 @@
 # WeatherMesh-2: PyTorch Implementation
 
+> [!IMPORTANT]
+> My implementation has been merged into https://github.com/openclimatefix/graph_weather by https://github.com/jacobbieker. Additionally, Windborne has since released their own source code: https://github.com/windborne/WeatherMesh-3. 
+
 > [!NOTE] 
 > This repository contains an initial draft implementation of the WeatherMesh-2 model. Design decisions were based on the ([technical blog from WindBorne Systems](https://windbornesystems.com/blog/weathermesh-2-technical-blog)).
 
